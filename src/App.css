@@ -1,0 +1,71 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+}
+
+#display-wrapper {
+  height: 100px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.formulaScreen {
+  height: 40px;
+  width: 100%;
+  text-align: right;
+  font-size: 1rem;
+  
+}
+
+#display {
+  height: 60px;
+  width: 100%;
+  text-align: right;
+  font-size: 2rem;
+}
+
+.keys {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 400px;
+  margin: auto;
+}
+
+.key {
+  display: flex;
+  width: calc(25% - 2px);
+  height: 70px;
+  border: 1px solid black;
+}
+
+.key.wide {
+  display: flex;
+  width: calc(50% - 2px);
+  height: 70px;
+}
+
+.bottom-rows {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom-rows > .key {
+    width: calc(33.3% - 2px);
+
+}
+
+.bottom-rows > .key.wide {
+  width: calc(66.6% - 2px);
+
+}
+
+#equals {
+  width: calc(25% - 2px);
+  height: 140px;
+  border: 1px solid black;
+}
+
